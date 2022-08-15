@@ -1,2 +1,0 @@
-shortId firstName   lastName    street1 street2 city    postalCode  state   country
-PKZ86V  Datrigerdi  Germlino    105 Broadway        Cambridge   02142   MA  US SOMETHING
