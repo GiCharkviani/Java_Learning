@@ -35,7 +35,5 @@ public class Main {
 
         myBank.printBranches();
 
-        batumi.addCustomer("Guga", 231);
-
     }
 }
