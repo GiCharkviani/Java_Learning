@@ -15,7 +15,7 @@ public class Branch {
     public Customer addCustomer(String name, double transaction) {
         Customer customer = new Customer(name, transaction);
         customers.add(customer);
-        return findCustomer(name);
+        return customer;
     }
 
     public void printCustomers() {

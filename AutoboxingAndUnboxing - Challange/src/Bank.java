@@ -8,7 +8,7 @@ public class Bank {
             Branch branch = new Branch(name);
             branch.addCustomer("Unknown customer", 2d);
             branches.add(branch);
-            return findBranch(name);
+            return branch;
         } else {
             System.out.println("Branch " + name + " already exists.");
             return null;
