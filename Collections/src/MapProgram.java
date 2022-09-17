@@ -28,8 +28,28 @@ public class MapProgram {
 
         System.out.println("----------------------");
 
+        // removing items
+//        languages.remove("Lisp");
+
+        if(languages.remove("Algol", "a family of algorithmic languages"))
+            System.out.println("Algo removed");
+        else
+            System.out.println("Algo not removed, key/value pair not found");
+
+        // replacing item
+//        System.out.println(languages.replace("Lisp", "Therein lies madness", "a functional programming language with imperative features")); // will return previous entry
+        System.out.println(languages.replace("Scala", "this will not be added")); // returns null
+
+        if(languages.replace("Lisp", "this won't work", "a functional programming language with imperative features"))
+            System.out.println("Lisp replaced");
+        else
+            System.out.println("Lisp was not replaced");
+
         // printing keys
         for(String key: languages.keySet())
             System.out.println(key + " -> " + languages.get(key));
+
+
+
     }
 }
