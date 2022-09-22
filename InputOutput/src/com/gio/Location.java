@@ -1,17 +1,20 @@
 package com.gio;
 
-import java.util.HashMap;
+import java.io.Serializable;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
-public class Location {
+public class Location implements Serializable {
     private final int locationID;
     private final String description;
     private final Map<String, Integer> exits;
 
+    private long serialVersionUID = 1l; // needed for serializing object
+
     public Location(int locationID, String description, Map<String, Integer> exits) {
         this.locationID = locationID;
         this.description = description;
-        this.exits = exits != null ? new HashMap<>(exits) : new HashMap<>();
+        this.exits = exits != null ? new LinkedHashMap<>(exits) : new LinkedHashMap<>();
         this.exits.put("Q", 0);
     }
 
@@ -30,7 +33,7 @@ public class Location {
     }
 
     public Map<String, Integer> getExits() {
-        return new HashMap<>(exits); // copies
+        return new LinkedHashMap<>(exits); // copies
     }
 
     protected void addExit(String direction, int location) {
