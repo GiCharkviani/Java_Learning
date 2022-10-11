@@ -1,12 +1,12 @@
 package com.gio;
 
-import static com.gio.ThreadColor.ANSI_GREEN;
-import static com.gio.ThreadColor.ANSI_PURPLE;
+import static com.gio.ThreadColor.*;
 
 public class Main {
     public static void main(String[] args) {
         System.out.println(ANSI_PURPLE + "Hello from the man thread.");
         Thread anotherThread = new AnotherThread();
+        anotherThread.setName("== Another Thread ==");
         anotherThread.start(); // It enables JVM to run() method be executed. We can't use another instance of this thread
 
         new Thread() {
@@ -14,6 +14,14 @@ public class Main {
                 System.out.println(ANSI_GREEN + "Hello from the anonymous class thread");
             }
         }.start();
+
+        Thread myRunnableThread = new Thread(new MyRunnable() {
+            @Override
+            public void run() {
+                System.out.println(ANSI_RED + "Hello from the anonymous class's implementation of run()");
+            }
+        });
+        myRunnableThread.start();
 
         System.out.println(ANSI_PURPLE + "Hello again from the main thread.");
     }
