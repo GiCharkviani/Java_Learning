@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="879760c9-13e3-4670-9e69-4925cc843161" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Deadlock/src/com/gio/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SayHello/src/com/gio/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Starvation/src/com/gio/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Starvation/src/com/gio/ThreadColor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProducerConsumer/com/gio/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProducerConsumer/com/gio/MyConsumer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProducerConsumer/com/gio/MyProducer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/gio/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/gio/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +70,9 @@
       <updated>1667236109561</updated>
       <workItem from="1667236110686" duration="1533000" />
       <workItem from="1667406029537" duration="2800000" />
-      <workItem from="1667409755332" duration="638000" />
+      <workItem from="1667409755332" duration="873000" />
+      <workItem from="1667493327899" duration="40000" />
+      <workItem from="1667495106987" duration="601000" />
     </task>
     <servers />
   </component>
