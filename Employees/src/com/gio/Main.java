@@ -2,8 +2,7 @@ package com.gio;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Function;
-import java.util.function.Predicate;
+import java.util.function.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -36,6 +35,26 @@ public class Main {
 
         for(Employee employee: employees)
             System.out.println(getName(getFirstName, employee));
+
+        Function<Employee, String> upperCase = employee -> employee.getName().toUpperCase();
+        Function<String, String> firstName = name -> name.substring(0, name.indexOf(' '));
+        Function<Employee, String> chainFunction = upperCase.andThen(firstName);
+
+        System.out.println(chainFunction.apply(employees.get(0)));
+
+        BiFunction<String, Employee, String> concatAge = (String name, Employee employee)
+                -> name.concat(" " + employee.getAge());
+
+        String upperName = upperCase.apply(employees.get(0));
+        System.out.println(concatAge.apply(upperName, employees.get(0)));
+
+        IntUnaryOperator incBy5 = i -> i+5;
+        System.out.println(incBy5.applyAsInt(10));
+
+        // Consumers
+        Consumer<String> c1 = s -> s.toUpperCase();
+        Consumer<String> c2 = s -> System.out.println(s);
+        c1.andThen(c2).accept("Hello World");
     }
 
     private static String getName(Function<Employee, String> getName, Employee employee) {
