@@ -1,0 +1,10 @@
+/**
+ * 
+ */
+/**
+ * @author giorgi.charkviani
+ *
+ */
+module SpringLearning {
+	requires spring.context;
+}
