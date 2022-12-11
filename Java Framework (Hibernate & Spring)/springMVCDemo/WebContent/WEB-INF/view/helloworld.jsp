@@ -13,6 +13,8 @@
 		<hr/>
 		
 		<p>The message: ${message}</p>
+		<hr/>
+		<a href="">Home Page</a>
 	</body>
 
 </html>
