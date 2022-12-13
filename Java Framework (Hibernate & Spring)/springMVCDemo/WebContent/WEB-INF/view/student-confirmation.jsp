@@ -1,4 +1,5 @@
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"  %>
+
 
 <html>
 
@@ -8,5 +9,14 @@
 
 	<body>
 		<p>The student is confirmed: ${student.firstName} ${student.lastName}</p>
+		<p>Country: ${student.country}</p>
+		<p>Favorite Language: ${student.favoriteLanguage}</p>
+		
+		<p>Operating Systems: </p>
+		<ul>
+			<c:forEach var="temp" items="${student.operatingSystems }" >
+				<li >${temp}</li>
+			</c:forEach>
+		</ul>
 	</body>
 </html>
