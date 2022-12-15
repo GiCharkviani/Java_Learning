@@ -3,7 +3,7 @@
 
 <html>
 	<head>
-		<title>Customer COnfirmation</title>
+		<title>Customer Confirmation</title>
 		<style>
 			.error {
 				color: red;
@@ -12,6 +12,9 @@
 	</head>
 
 	<body>
-		The customer is confirmed: ${customer.firstName} ${customer.lastName}
+		<h3>The customer is confirmed </h3>
+		<p>First Name: ${customer.firstName}</p> 
+		<p>Last Name: ${customer.lastName}</p>
+		<p>Free Passes: ${customer.freePasses}</p>
 	</body>
 </html>
