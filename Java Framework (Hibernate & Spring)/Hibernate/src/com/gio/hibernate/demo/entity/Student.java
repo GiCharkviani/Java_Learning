@@ -2,6 +2,8 @@ package com.gio.hibernate.demo.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -10,11 +12,12 @@ import javax.persistence.Table;
 public class Student {
 	
 	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="id")
 	private int id;
 	
 	@Column(name="first_name")
-	private String firstname;
+	private String firstName;
 	
 	@Column(name="last_name")
 	private String lastName;
@@ -27,7 +30,7 @@ public class Student {
 
 
 	public Student(String firstname, String lastName, String email) {
-		this.firstname = firstname;
+		this.firstName = firstname;
 		this.lastName = lastName;
 		this.email = email;
 	}
@@ -43,13 +46,13 @@ public class Student {
 	}
 
 
-	public String getFirstname() {
-		return firstname;
+	public String getFirstName() {
+		return firstName;
 	}
 
 
-	public void setFirstname(String firstname) {
-		this.firstname = firstname;
+	public void setFirstName(String firstname) {
+		this.firstName = firstname;
 	}
 
 
@@ -75,7 +78,7 @@ public class Student {
 
 	@Override
 	public String toString() {
-		return "Student [id=" + id + ", firstname=" + firstname + ", lastName=" + lastName + ", email=" + email + "]";
+		return "Student [ id = " + id + ", firstName = " + firstName + ", lastName = " + lastName + ", email = " + email + " ]";
 	}
 	
 	
