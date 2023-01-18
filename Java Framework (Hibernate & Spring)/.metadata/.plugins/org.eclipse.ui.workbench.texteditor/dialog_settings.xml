@@ -6,8 +6,10 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value=""/>
+		<item key="selection" value="getConnection"/>
 		<list key="findhistory">
+			<item value="getConnection"/>
+			<item value="getCo"/>
 			<item value="myFortuneService"/>
 		</list>
 		<list key="replacehistory">
