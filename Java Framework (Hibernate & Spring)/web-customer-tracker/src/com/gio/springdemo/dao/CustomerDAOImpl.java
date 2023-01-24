@@ -1,9 +1,6 @@
 package com.gio.springdemo.dao;
 
-import java.util.ArrayList;
 import java.util.List;
-
-import javax.transaction.Transactional;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -21,7 +18,6 @@ public class CustomerDAOImpl implements CustomerDAO {
 	
 
 	@Override
-	@Transactional // does all transactions stuff
 	public List<Customer> getCustomers() {
 		
 		// get the current hibernate session

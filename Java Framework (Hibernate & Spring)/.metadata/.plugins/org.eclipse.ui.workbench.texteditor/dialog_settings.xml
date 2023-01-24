@@ -8,6 +8,8 @@
 		<item key="isRegEx" value="false"/>
 		<item key="selection" value=""/>
 		<list key="findhistory">
+			<item value="service"/>
+			<item value="se"/>
 			<item value="luv"/>
 			<item value="getConnection"/>
 			<item value="getCo"/>
