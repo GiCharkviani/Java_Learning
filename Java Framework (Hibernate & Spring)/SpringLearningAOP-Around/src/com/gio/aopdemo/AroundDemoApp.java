@@ -20,8 +20,15 @@ public class AroundDemoApp {
 		TrafficFortuneService theFortuneService = 
 				context.getBean("trafficFortuneService", TrafficFortuneService.class);
 		
-		
+		System.out.println("\nMain Program: AroundDemoApp");
 
+		System.out.println("Calling getFortune");
+		
+		String data = theFortuneService.getFortune();
+		
+		System.out.println("\nMy fortune is: " + data);
+
+		System.out.println("Finished");
 		
 		// close the context
 		context.close();
