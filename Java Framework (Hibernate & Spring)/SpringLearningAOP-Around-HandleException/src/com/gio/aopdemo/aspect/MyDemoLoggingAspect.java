@@ -43,7 +43,11 @@ public class MyDemoLoggingAspect {
 		} catch(RuntimeException e) {
 			myLogger.info(e.getMessage());
 			
-			result = "Major accident! But no worries, your private AOP helicopter is on the way!";
+//			result = "Major accident! we handled it, no worries";
+			
+			myLogger.info("Major accident! We are passing exception back to you");
+			
+			throw e;
 		}
 		
 		// get end timestamp
