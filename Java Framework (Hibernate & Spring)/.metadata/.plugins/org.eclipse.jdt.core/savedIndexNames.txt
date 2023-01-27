@@ -13,9 +13,11 @@ INDEX VERSION 1.131+/Users/giorgi.charkviani/Desktop/Learning/Java/Java Framewor
 121714039.index
 527885736.index
 1976803541.index
+3182472186.index
 1274535003.index
 2220258518.index
 2941690545.index
+3534067879.index
 2111486914.index
 2574713999.index
 1502220155.index
@@ -66,6 +68,7 @@ INDEX VERSION 1.131+/Users/giorgi.charkviani/Desktop/Learning/Java/Java Framewor
 778758763.index
 1102374357.index
 2259625740.index
+2509861456.index
 2191960557.index
 4116549441.index
 2104312567.index
@@ -128,6 +131,7 @@ INDEX VERSION 1.131+/Users/giorgi.charkviani/Desktop/Learning/Java/Java Framewor
 855675484.index
 2251181530.index
 3397327390.index
+3637646533.index
 1005728348.index
 598443112.index
 4258004076.index
@@ -136,6 +140,7 @@ INDEX VERSION 1.131+/Users/giorgi.charkviani/Desktop/Learning/Java/Java Framewor
 566023788.index
 1626839121.index
 2640334357.index
+122386151.index
 1549145589.index
 2227216905.index
 2686773660.index
@@ -231,6 +236,7 @@ INDEX VERSION 1.131+/Users/giorgi.charkviani/Desktop/Learning/Java/Java Framewor
 3749814244.index
 78374400.index
 1816349872.index
+1143983615.index
 966094081.index
 155714946.index
 2593554407.index
@@ -238,6 +244,7 @@ INDEX VERSION 1.131+/Users/giorgi.charkviani/Desktop/Learning/Java/Java Framewor
 740063958.index
 3452806820.index
 109780363.index
+2526131744.index
 2015727462.index
 12364954.index
 718741286.index
@@ -247,7 +254,9 @@ INDEX VERSION 1.131+/Users/giorgi.charkviani/Desktop/Learning/Java/Java Framewor
 2393818073.index
 2400144648.index
 262970499.index
+1082155784.index
 2351916286.index
+1016251626.index
 3358846147.index
 1286855930.index
 1186653924.index
@@ -262,9 +271,12 @@ INDEX VERSION 1.131+/Users/giorgi.charkviani/Desktop/Learning/Java/Java Framewor
 1155852826.index
 2201387755.index
 1887108724.index
+272077387.index
 3205383381.index
 738508729.index
 2743587613.index
+2601284037.index
+4223906167.index
 214671550.index
 3734333321.index
 818230039.index
@@ -280,6 +292,7 @@ INDEX VERSION 1.131+/Users/giorgi.charkviani/Desktop/Learning/Java/Java Framewor
 987734316.index
 3453138583.index
 190571829.index
+3932867680.index
 224349976.index
 3778009720.index
 2970725632.index
@@ -332,6 +345,7 @@ INDEX VERSION 1.131+/Users/giorgi.charkviani/Desktop/Learning/Java/Java Framewor
 1675531235.index
 2037855913.index
 2447580598.index
+1654449562.index
 2067730589.index
 3397527567.index
 1630253598.index
@@ -367,6 +381,7 @@ INDEX VERSION 1.131+/Users/giorgi.charkviani/Desktop/Learning/Java/Java Framewor
 2605069189.index
 3483794524.index
 2931027316.index
+2664184267.index
 3786493819.index
 3244073436.index
 2998643097.index
@@ -389,6 +404,7 @@ INDEX VERSION 1.131+/Users/giorgi.charkviani/Desktop/Learning/Java/Java Framewor
 3389443055.index
 2045067871.index
 3018508767.index
+2598073169.index
 2166789790.index
 2879445012.index
 2700713685.index
@@ -420,12 +436,14 @@ INDEX VERSION 1.131+/Users/giorgi.charkviani/Desktop/Learning/Java/Java Framewor
 3270689518.index
 2808928423.index
 775955706.index
+2917888418.index
 3028479240.index
 2446799599.index
 1190808819.index
 3621257389.index
 2108598700.index
 2413620829.index
+1882548017.index
 2359961170.index
 771649653.index
 3402580481.index
@@ -453,6 +471,7 @@ INDEX VERSION 1.131+/Users/giorgi.charkviani/Desktop/Learning/Java/Java Framewor
 3397911085.index
 2411496740.index
 3560913344.index
+1640167029.index
 2368115439.index
 3537195002.index
 938686266.index
@@ -460,6 +479,7 @@ INDEX VERSION 1.131+/Users/giorgi.charkviani/Desktop/Learning/Java/Java Framewor
 924309702.index
 3073576547.index
 3264550194.index
+495589263.index
 396693140.index
 1904623811.index
 3948796711.index
@@ -501,6 +521,7 @@ INDEX VERSION 1.131+/Users/giorgi.charkviani/Desktop/Learning/Java/Java Framewor
 2224947732.index
 3471741514.index
 1574759606.index
+1128420932.index
 1608375871.index
 682675027.index
 94835645.index
@@ -516,6 +537,7 @@ INDEX VERSION 1.131+/Users/giorgi.charkviani/Desktop/Learning/Java/Java Framewor
 1107646560.index
 1793087979.index
 1975746670.index
+1150757266.index
 2701439528.index
 4111173813.index
 2038836371.index
@@ -525,6 +547,7 @@ INDEX VERSION 1.131+/Users/giorgi.charkviani/Desktop/Learning/Java/Java Framewor
 4202093737.index
 2358561283.index
 3365479840.index
+1318544760.index
 1514566063.index
 2504519368.index
 4081723325.index
@@ -547,6 +570,7 @@ INDEX VERSION 1.131+/Users/giorgi.charkviani/Desktop/Learning/Java/Java Framewor
 3965674554.index
 2430302925.index
 308719208.index
+1708506351.index
 2184775488.index
 3909284109.index
 3682217665.index
@@ -587,6 +611,7 @@ INDEX VERSION 1.131+/Users/giorgi.charkviani/Desktop/Learning/Java/Java Framewor
 283793073.index
 2436914341.index
 826370443.index
+3602043453.index
 1879944575.index
 3807921241.index
 1467710500.index
@@ -609,6 +634,7 @@ INDEX VERSION 1.131+/Users/giorgi.charkviani/Desktop/Learning/Java/Java Framewor
 1261450329.index
 1656641313.index
 48591451.index
+3441232491.index
 862316059.index
 751684093.index
 1239431760.index
@@ -619,6 +645,7 @@ INDEX VERSION 1.131+/Users/giorgi.charkviani/Desktop/Learning/Java/Java Framewor
 3220422368.index
 806946282.index
 656571807.index
+2089378109.index
 252018601.index
 2718252179.index
 78914707.index
@@ -676,6 +703,7 @@ INDEX VERSION 1.131+/Users/giorgi.charkviani/Desktop/Learning/Java/Java Framewor
 2470142295.index
 3388074200.index
 1953346798.index
+3114787168.index
 4268598650.index
 3670644111.index
 2434084442.index
@@ -704,6 +732,7 @@ INDEX VERSION 1.131+/Users/giorgi.charkviani/Desktop/Learning/Java/Java Framewor
 3864880285.index
 1477924243.index
 3918615099.index
+1967776307.index
 3493095503.index
 844148925.index
 375522804.index
@@ -723,6 +752,7 @@ INDEX VERSION 1.131+/Users/giorgi.charkviani/Desktop/Learning/Java/Java Framewor
 2764457573.index
 2477247408.index
 3300007080.index
+1720430336.index
 2780749782.index
 1458482552.index
 2820549366.index
@@ -743,6 +773,7 @@ INDEX VERSION 1.131+/Users/giorgi.charkviani/Desktop/Learning/Java/Java Framewor
 4237098917.index
 775524985.index
 18262913.index
+479218078.index
 3767205881.index
 3985833308.index
 1872014173.index
@@ -759,6 +790,7 @@ INDEX VERSION 1.131+/Users/giorgi.charkviani/Desktop/Learning/Java/Java Framewor
 3064233198.index
 1041840397.index
 1754417889.index
+2458320058.index
 1931408073.index
 15384471.index
 4014641597.index
@@ -828,6 +860,7 @@ INDEX VERSION 1.131+/Users/giorgi.charkviani/Desktop/Learning/Java/Java Framewor
 1147423111.index
 4093604412.index
 1457541289.index
+496340956.index
 4153598307.index
 1064497824.index
 1269016721.index
@@ -849,6 +882,7 @@ INDEX VERSION 1.131+/Users/giorgi.charkviani/Desktop/Learning/Java/Java Framewor
 4042822914.index
 121710106.index
 1250167284.index
+3155304292.index
 298536766.index
 1924798556.index
 474635148.index
@@ -896,6 +930,7 @@ INDEX VERSION 1.131+/Users/giorgi.charkviani/Desktop/Learning/Java/Java Framewor
 479537836.index
 4213265386.index
 659992470.index
+3372892401.index
 2345562893.index
 1709748733.index
 2410317904.index
@@ -904,6 +939,7 @@ INDEX VERSION 1.131+/Users/giorgi.charkviani/Desktop/Learning/Java/Java Framewor
 2268042514.index
 3868813619.index
 416210371.index
+2514532604.index
 2759018873.index
 3984988321.index
 333725078.index
@@ -921,6 +957,7 @@ INDEX VERSION 1.131+/Users/giorgi.charkviani/Desktop/Learning/Java/Java Framewor
 4048209371.index
 3178602537.index
 1715710579.index
+2675837522.index
 1314725672.index
 2279450438.index
 4017785502.index
@@ -931,6 +968,7 @@ INDEX VERSION 1.131+/Users/giorgi.charkviani/Desktop/Learning/Java/Java Framewor
 249393640.index
 3091747397.index
 3288741213.index
+2448945766.index
 1620601333.index
 4193312141.index
 193160980.index
@@ -994,6 +1032,7 @@ INDEX VERSION 1.131+/Users/giorgi.charkviani/Desktop/Learning/Java/Java Framewor
 841759165.index
 2851910993.index
 681770323.index
+2908453739.index
 2077923089.index
 4114349618.index
 1218561477.index
@@ -1041,6 +1080,7 @@ INDEX VERSION 1.131+/Users/giorgi.charkviani/Desktop/Learning/Java/Java Framewor
 4223292356.index
 391819780.index
 1066017408.index
+2373892169.index
 2513657312.index
 2039526500.index
 1614344383.index
@@ -1051,6 +1091,7 @@ INDEX VERSION 1.131+/Users/giorgi.charkviani/Desktop/Learning/Java/Java Framewor
 3223384179.index
 1052097671.index
 3145049468.index
+2023631783.index
 800533177.index
 181025650.index
 4204426888.index
@@ -1091,6 +1132,8 @@ INDEX VERSION 1.131+/Users/giorgi.charkviani/Desktop/Learning/Java/Java Framewor
 788307246.index
 3541239136.index
 4256619618.index
+1045770099.index
+3703922271.index
 343970689.index
 3518662450.index
 2680221426.index
@@ -1149,6 +1192,7 @@ INDEX VERSION 1.131+/Users/giorgi.charkviani/Desktop/Learning/Java/Java Framewor
 3210932198.index
 3650088868.index
 273893265.index
+2442016970.index
 584117169.index
 2353221115.index
 2033072083.index
@@ -1162,7 +1206,9 @@ INDEX VERSION 1.131+/Users/giorgi.charkviani/Desktop/Learning/Java/Java Framewor
 912423698.index
 2862088250.index
 2235499613.index
+411501316.index
 2041354480.index
+1249914850.index
 3637146408.index
 307930381.index
 231315911.index
@@ -1179,6 +1225,7 @@ INDEX VERSION 1.131+/Users/giorgi.charkviani/Desktop/Learning/Java/Java Framewor
 3850024046.index
 1574501000.index
 3834815810.index
+428000582.index
 3738136640.index
 84235116.index
 3634050745.index
@@ -1201,6 +1248,7 @@ INDEX VERSION 1.131+/Users/giorgi.charkviani/Desktop/Learning/Java/Java Framewor
 1351850533.index
 1614440894.index
 894649074.index
+429743381.index
 2333373595.index
 2072739614.index
 3392153540.index

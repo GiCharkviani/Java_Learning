@@ -24,6 +24,7 @@ public class MyDemoLoggingAspect {
 	
 	private Logger myLogger = Logger.getLogger(getClass().getName());
 	
+	
 	@Around("execution(* com.gio.aopdemo.service.*.getFortune(..))")
 	public Object aroundGetFortune(ProceedingJoinPoint theProceedingJoinPoint) throws Throwable {
 		
@@ -35,7 +36,15 @@ public class MyDemoLoggingAspect {
 		long begin = System.currentTimeMillis();
 		
 		// now, let's execute the method
-		Object result = theProceedingJoinPoint.proceed();
+		Object result = null;
+		
+		try {
+			result = theProceedingJoinPoint.proceed();
+		} catch(RuntimeException e) {
+			myLogger.info(e.getMessage());
+			
+			result = "Major accident! But no worries, your private AOP helicopter is on the way!";
+		}
 		
 		// get end timestamp
 		long end = System.currentTimeMillis();
