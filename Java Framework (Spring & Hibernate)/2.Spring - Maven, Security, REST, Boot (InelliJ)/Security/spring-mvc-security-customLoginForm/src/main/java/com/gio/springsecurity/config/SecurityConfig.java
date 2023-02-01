@@ -25,13 +25,13 @@ public class SecurityConfig {
         UserDetails mary = User.builder()
                 .username("mary")
                 .password("{noop}test123")
-                .roles("MANAGER")
+                .roles("MANAGER", "EMPLOYEE")
                 .build();
 
         UserDetails susan = User.builder()
                 .username("susan")
                 .password("{noop}test123")
-                .roles("ADMIN")
+                .roles("ADMIN", "EMPLOYEE")
                 .build();
 
         return new InMemoryUserDetailsManager(john, mary, susan);
@@ -42,6 +42,7 @@ public class SecurityConfig {
 
         return http.authorizeRequests(configurer -> configurer.anyRequest().authenticated())
                 .formLogin(configurer -> configurer.loginPage("/showMyLoginPage").loginProcessingUrl("/authenticateTheUser").permitAll())
+                .logout(configurer -> configurer.permitAll())
                 .build();
     }
 }
