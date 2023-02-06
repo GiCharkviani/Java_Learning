@@ -6,5 +6,6 @@
 <body>
     <h1>Spring REST Demo</h1>
     <a href="${pageContext.request.contextPath}/test/hello">Hello</a>
+    <a href="${pageContext.request.contextPath}/api/students">Get All students</a>
 </body>
 </html>
