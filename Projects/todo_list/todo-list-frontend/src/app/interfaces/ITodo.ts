@@ -1,4 +1,5 @@
 export interface ITodo {
+  id: number;
   whatTodo: string;
-  whenTodo: string;
+  whenTodo: string | Date;
 }
