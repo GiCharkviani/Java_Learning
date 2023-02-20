@@ -10,12 +10,12 @@ import java.util.List;
 @CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("/api")
-public class TodoController {
+public class TodoRestAPI {
 
     private final TodoService todoService;
 
     @Autowired
-    public TodoController(TodoService todoService) {
+    public TodoRestAPI(TodoService todoService) {
         this.todoService = todoService;
     }
 
