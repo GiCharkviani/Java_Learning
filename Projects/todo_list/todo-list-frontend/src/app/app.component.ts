@@ -1,5 +1,5 @@
 import {ChangeDetectionStrategy, ChangeDetectorRef, Component} from '@angular/core';
-import {HttService} from "./services/htt.service";
+import {HttpService} from "./services/http.service";
 import {ITodo} from "./interfaces/ITodo";
 import {exhaustMap, Observable, pipe} from "rxjs";
 
@@ -14,7 +14,7 @@ export class AppComponent {
   public editing!: ITodo | undefined;
   public editMode: boolean = false;
 
-  constructor(private readonly httpService: HttService, private readonly cdr: ChangeDetectorRef) {
+  constructor(private readonly httpService: HttpService, private readonly cdr: ChangeDetectorRef) {
     this.todos$ = httpService.getTodos();
   }
 

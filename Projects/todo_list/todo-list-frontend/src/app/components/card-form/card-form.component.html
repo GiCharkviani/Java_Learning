@@ -1,7 +1,24 @@
-<mat-form-field class="example-form-field" appearance="fill">
-  <mat-label>Clearable input</mat-label>
-  <input matInput type="text" [(ngModel)]="value">
-  <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
-    <mat-icon>close</mat-icon>
-  </button>
-</mat-form-field>
+<form class="todoForm" [formGroup]="todoForm">
+  <section class="todoForm-todo">
+    <mat-form-field class="todoForm-todo-todoText" appearance="standard">
+      <mat-label>What To Do</mat-label>
+      <input
+        matInput
+        formControlName="whatTodo"
+        type="text"
+        (keyup.enter)="saveTodo()"
+      >
+      <input
+        matInput
+        formControlName="whenTodo"
+        [matDatepicker]="picker"
+        [ngClass]="{'todoForm-todo-todoText-margin': todoForm.get('whenTodo')?.value}"
+        [disabled]="true"
+        >
+      <mat-datepicker-toggle [disabled]="false" matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker [disabled]="false" #picker></mat-datepicker>
+    </mat-form-field>
+  </section>
+  <section class="todoForm-sections">
+  </section>
+</form>

@@ -1,0 +1,46 @@
+@use 'colors';
+
+form.todoForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .todoForm-todo {
+    width: 100%;
+    font-size: 1.2rem;
+    mat-form-field.todoForm-todo-todoText {
+      width: 100%;
+    }
+
+    &-todoText-margin {
+      border-top: 2px solid colors.$backgroundTransparent;
+      padding-top: 15px;
+      margin-top: 10px;
+    }
+  }
+
+  .todoForm-sections {
+    display: flex;
+  }
+
+
+
+  ::ng-deep {
+    .mat-focused .mat-form-field-label {
+      /*change color of label*/
+      color: colors.$background !important;
+    }
+
+    .mat-form-field-underline {
+      /*change color of underline*/
+      background-color: colors.$background !important;
+    }
+
+    .mat-form-field-ripple {
+      /*change color of underline when focused*/
+      background-color: colors.$background !important;
+    }
+  }
+
+
+}

@@ -5,7 +5,7 @@ import {ITodo} from "../interfaces/ITodo";
 import {environment} from "../../environments/environment.prod";
 
 @Injectable({providedIn: 'root'})
-export class HttService {
+export class HttpService {
   constructor(private readonly httpClient: HttpClient) {
   }
 

@@ -1,8 +1,20 @@
-<main>
-  <header>
-    <app-card-form></app-card-form>
-  </header>
-  <section>
-    <app-card></app-card>
+<header class="headerContainer">
+  <h1>ToDo</h1>
+</header>
+<main class="mainContainer">
+  <section class="mainContainer-form">
+    <app-card-form (add)="addTodo($event)"></app-card-form>
   </section>
+  <section class="mainContainer-cards">
+    <ng-container *ngIf="todos$ | async as todos">
+      <app-card
+        *ngFor="let todo of todos; trackBy: track"
+        [todo]="todo"
+        (delete)="deleteTodo($event)"
+      ></app-card>
+    </ng-container>
+  </section>
+  <footer class="mainContainer-footer">
+<!--    <mat-progress-bar mode="indeterminate"></mat-progress-bar>-->
+  </footer>
 </main>

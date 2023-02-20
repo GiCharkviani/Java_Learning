@@ -1,7 +1,7 @@
 import {ChangeDetectionStrategy, ChangeDetectorRef, Component} from '@angular/core';
-import {exhaustMap, Observable} from "rxjs";
+import {exhaustMap, Observable, switchMap} from "rxjs";
 import {ITodo} from "../../interfaces/ITodo";
-import {HttService} from "../../services/htt.service";
+import {HttpService} from "../../services/http.service";
 
 @Component({
   selector: 'app-main',
@@ -11,50 +11,24 @@ import {HttService} from "../../services/htt.service";
 })
 export class MainComponent {
   public todos$!: Observable<ITodo[]>;
-  public editing!: ITodo | undefined;
-  public editMode: boolean = false;
+  public loading: boolean = false;
 
-  constructor(private readonly httpService: HttService, private readonly cdr: ChangeDetectorRef) {
+  constructor(private readonly httpService: HttpService) {
     this.todos$ = httpService.getTodos();
+  }
+
+  public track(index: number, todo: ITodo) {
+    return todo.id;
   }
 
   public deleteTodo(id: number): void {
     this.todos$ = this.httpService.deleteTodo(id)
-      .pipe(
-        exhaustMap(() => this.httpService.getTodos())
-      )
+      .pipe(switchMap((todo: ITodo) => this.httpService.getTodos()))
   }
 
-  public addTodo(value: string): void {
-    const todo: Partial<ITodo> = {
-      whatTodo: value,
-      whenTodo: new Date()
-    }
-    this.httpService.addTodo(todo).subscribe();
-  }
-
-  public editTodo(value: string, id: number): void {
-    const todo: Partial<ITodo> = {
-      id: id,
-      whatTodo: value,
-      whenTodo: new Date()
-    }
-    this.httpService.addTodo(todo).subscribe({
-      next: () => {
-        this.cdr.markForCheck();
-        this.editMode = false;
-        this.editing = undefined;
-      }}
-    );
-  }
-
-  public edit(id: number): void {
-    this.httpService.getTodo(id).subscribe({
-      next: (todo: ITodo) => {
-        this.cdr.markForCheck();
-        this.editing = todo;
-        this.editMode = true;
-      }
-    })
+  public addTodo(todo: ITodo): void {
+    this.todos$ = this.httpService
+      .addTodo(todo)
+      .pipe(switchMap(() => this.httpService.getTodos()))
   }
 }
