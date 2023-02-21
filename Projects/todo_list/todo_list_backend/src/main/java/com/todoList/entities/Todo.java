@@ -1,59 +1,31 @@
 package com.todoList.entities;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.sql.Timestamp;
 
-@Table
-@Entity(name = "todo")
-public class Todo {
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+@Entity
+@Table(name = "todos")
+public class Todo
+{
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    @GeneratedValue
+    private long todoId;
 
-    @Column(name = "what_todo")
     private String whatTodo;
 
-    @Column(name = "when_todo")
     private Timestamp whenTodo;
 
-    public Todo() {}
+    @ManyToOne(cascade={CascadeType.PERSIST, CascadeType.MERGE, CascadeType.DETACH, CascadeType.REFRESH})
+    @JoinColumn(name="userId")
+    private User user;
 
-    public Todo(String whatTodo, Timestamp whenTodo) {
-        this.whatTodo = whatTodo;
-        this.whenTodo = whenTodo;
-    }
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    public String getWhatTodo() {
-        return whatTodo;
-    }
-
-    public void setWhatTodo(String whatTodo) {
-        this.whatTodo = whatTodo;
-    }
-
-    public Timestamp getWhenTodo() {
-        return whenTodo;
-    }
-
-    public void setWhenTodo(Timestamp whenTodo) {
-        this.whenTodo = whenTodo;
-    }
-
-    @Override
-    public String toString() {
-        return "Todo{" +
-                "id=" + id +
-                ", whatTodo='" + whatTodo + '\'' +
-                ", whenTodo=" + whenTodo +
-                '}';
-    }
 }

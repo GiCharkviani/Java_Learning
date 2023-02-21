@@ -1,6 +1,6 @@
-package com.todoList.services;
+package com.todoList.services.todo;
 
-import com.todoList.dao.TodoDAO;
+import com.todoList.dao.todo.TodoDAO;
 import com.todoList.entities.Todo;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;

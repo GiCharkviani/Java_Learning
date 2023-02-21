@@ -1,10 +1,10 @@
-package com.todoList.dao;
+package com.todoList.services.todo;
 
 import com.todoList.entities.Todo;
 
 import java.util.List;
 
-public interface ITodoDAO {
+public interface ITodoService  {
     List<Todo> getAll();
     Todo findById(long id);
     void save(Todo todo_value);

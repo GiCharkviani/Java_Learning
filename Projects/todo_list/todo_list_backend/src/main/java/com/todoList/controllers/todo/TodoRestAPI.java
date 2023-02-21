@@ -1,15 +1,15 @@
-package com.todoList.controllers;
+package com.todoList.controllers.todo;
 
 import com.todoList.entities.Todo;
-import com.todoList.services.TodoService;
+import com.todoList.services.todo.TodoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/api/todo")
 public class TodoRestAPI {
 
     private final TodoService todoService;
@@ -19,12 +19,12 @@ public class TodoRestAPI {
         this.todoService = todoService;
     }
 
-    @GetMapping("/todo")
+    @GetMapping("/")
     List<Todo> getTodos() {
         return todoService.getAll();
     }
 
-    @GetMapping("/todo/{todoId}")
+    @GetMapping("/{todoId}")
     Todo getTodo(@PathVariable int todoId) {
         Todo tempTodo = todoService.findById(todoId);
         if(tempTodo == null)
@@ -32,20 +32,20 @@ public class TodoRestAPI {
         return tempTodo;
     }
 
-    @PostMapping("/todo")
+    @PostMapping("/")
     Todo saveTodo(@RequestBody Todo todo) {
         System.out.println(todo);
         todoService.save(todo);
         return todo;
     }
 
-    @PutMapping("/todo")
+    @PutMapping("/")
     Todo updateTodo(@RequestBody Todo todo) {
         todoService.save(todo);
         return todo;
     }
 
-    @DeleteMapping("/todo/{todoId}")
+    @DeleteMapping("/")
     Todo deleteTodo(@PathVariable int todoId) {
         Todo tempTodo = todoService.findById(todoId);
         if(tempTodo == null)

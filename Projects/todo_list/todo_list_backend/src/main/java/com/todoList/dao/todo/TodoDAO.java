@@ -1,4 +1,4 @@
-package com.todoList.dao;
+package com.todoList.dao.todo;
 
 import com.todoList.entities.Todo;
 import jakarta.persistence.EntityManager;
@@ -21,7 +21,7 @@ public class TodoDAO implements ITodoDAO {
 
     @Override
     public List<Todo> getAll() {
-        Query theQuery = entityManager.createQuery("FROM todo ORDER BY whenTodo desc");
+        Query theQuery = entityManager.createQuery("FROM todos ORDER BY whenTodo desc");
         return theQuery.getResultList();
     }
 
