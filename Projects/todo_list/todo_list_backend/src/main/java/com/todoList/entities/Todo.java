@@ -1,14 +1,12 @@
 package com.todoList.entities;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.sql.Timestamp;
 
-@Data
+@Getter
+@Setter
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
@@ -18,14 +16,14 @@ public class Todo
 {
     @Id
     @GeneratedValue
-    private long todoId;
+    private long id;
 
     private String whatTodo;
 
     private Timestamp whenTodo;
 
     @ManyToOne(cascade={CascadeType.PERSIST, CascadeType.MERGE, CascadeType.DETACH, CascadeType.REFRESH})
-    @JoinColumn(name="userId")
+    @JoinColumn(name="user_id")
     private User user;
 
 }

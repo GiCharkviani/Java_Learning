@@ -1,4 +1,4 @@
-package com.todoList.controllers.auth;
+package com.todoList.controllers.auth.helpers;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

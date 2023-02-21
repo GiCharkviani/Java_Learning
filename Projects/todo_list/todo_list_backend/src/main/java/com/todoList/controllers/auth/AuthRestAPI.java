@@ -1,5 +1,8 @@
 package com.todoList.controllers.auth;
 
+import com.todoList.controllers.auth.helpers.AuthenticationRequest;
+import com.todoList.controllers.auth.helpers.AuthenticationResponse;
+import com.todoList.controllers.auth.helpers.RegisterRequest;
 import com.todoList.services.auth.AuthenticationService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;

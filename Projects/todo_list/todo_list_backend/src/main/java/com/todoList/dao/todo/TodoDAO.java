@@ -21,7 +21,7 @@ public class TodoDAO implements ITodoDAO {
 
     @Override
     public List<Todo> getAll() {
-        Query theQuery = entityManager.createQuery("FROM todos ORDER BY whenTodo desc");
+        Query theQuery = entityManager.createQuery("FROM todos WHERE  ORDER BY whenTodo desc");
         return theQuery.getResultList();
     }
 
