@@ -33,7 +33,7 @@ public class TodoDAO implements ITodoDAO {
 
     @Override
     public void deleteById(long id) {
-        Query theQuery = entityManager.createQuery("delete from todo where id=:todoId")
+        Query theQuery = entityManager.createQuery("delete from Todo where id=:todoId")
                 .setParameter("todoId", id);
         theQuery.executeUpdate();
     }
