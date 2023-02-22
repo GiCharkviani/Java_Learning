@@ -19,7 +19,7 @@ public class TodoRestAPI {
         this.todoService = todoService;
     }
 
-    @GetMapping("/")
+    @GetMapping
     List<Todo> getTodos() {
         return todoService.getAll();
     }
@@ -32,20 +32,20 @@ public class TodoRestAPI {
         return tempTodo;
     }
 
-    @PostMapping("/")
+    @PostMapping
     Todo saveTodo(@RequestBody Todo todo) {
         System.out.println(todo);
         todoService.save(todo);
         return todo;
     }
 
-    @PutMapping("/")
+    @PutMapping
     Todo updateTodo(@RequestBody Todo todo) {
         todoService.save(todo);
         return todo;
     }
 
-    @DeleteMapping("/")
+    @DeleteMapping("/{todoId}")
     Todo deleteTodo(@PathVariable int todoId) {
         Todo tempTodo = todoService.findById(todoId);
         if(tempTodo == null)
