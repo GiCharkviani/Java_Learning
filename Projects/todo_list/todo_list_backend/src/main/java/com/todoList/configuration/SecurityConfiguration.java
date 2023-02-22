@@ -40,8 +40,6 @@ public class SecurityConfiguration {
         http
                 .cors()
                 .and()
-                .csrf()
-                .disable()
                 .authorizeHttpRequests()
                 .requestMatchers("/api/auth/**")
                 .permitAll()
@@ -52,7 +50,8 @@ public class SecurityConfiguration {
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 .and()
                 .authenticationProvider(authenticationProvider)
-                .addFilterBefore(jwtAuthFilter, UsernamePasswordAuthenticationFilter.class);
+                .addFilterBefore(jwtAuthFilter, UsernamePasswordAuthenticationFilter.class)
+                .csrf().disable();
 
         return http.build();
     }
