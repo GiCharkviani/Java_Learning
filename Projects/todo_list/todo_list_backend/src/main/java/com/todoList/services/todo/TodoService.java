@@ -3,20 +3,16 @@ package com.todoList.services.todo;
 import com.todoList.dao.todo.TodoDAO;
 import com.todoList.entities.Todo;
 import jakarta.transaction.Transactional;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
+@AllArgsConstructor
 public class TodoService implements ITodoService {
 
     private final TodoDAO todoDAO;
-
-    @Autowired
-    public TodoService(TodoDAO todoDAO) {
-        this.todoDAO = todoDAO;
-    }
 
     @Override
     @Transactional

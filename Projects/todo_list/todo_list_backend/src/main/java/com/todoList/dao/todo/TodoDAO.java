@@ -3,25 +3,21 @@ package com.todoList.dao.todo;
 import com.todoList.entities.Todo;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.Query;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 @Repository
+@AllArgsConstructor
 public class TodoDAO implements ITodoDAO {
 
     private final EntityManager entityManager;
 
-    @Autowired
-    public TodoDAO(EntityManager entityManager) {
-        this.entityManager = entityManager;
-    }
-
 
     @Override
     public List<Todo> getAll() {
-        Query theQuery = entityManager.createQuery("FROM todos WHERE  ORDER BY whenTodo desc");
+        Query theQuery = entityManager.createQuery("FROM Todo ORDER BY whenTodo desc");
         return theQuery.getResultList();
     }
 
