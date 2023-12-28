@@ -85,7 +85,7 @@ class PersonJobBuilder extends PersonBuilderEmployee {
     }
 }
 
-public class FacadedBuilder {
+public class DemoFacadedBuilder {
     public static void main(String[] args) {
         PersonBuilderEmployee pb = new PersonBuilderEmployee();
         PersonEmployee person = pb
