@@ -3,13 +3,6 @@ package Factory;
 /* Abstract Factory */
 // if You have hierarchy of types, you can have hierarchy of Factories
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.security.KeyPair;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
-
 interface HotDrink {
     void consume();
 }
@@ -54,37 +47,37 @@ class CoffeeFactory implements HotDrinkFactory {
     }
 }
 
-class HotDrinkMachine {
-    private List<KeyPair<String, HotDrinkFactory>> namedFactories = new ArrayList<>();
+//class HotDrinkMachine {
+//    private List<KeyPair<String, HotDrinkFactory>> namedFactories = new ArrayList<>();
+//
+//    public HotDrinkMachine() throws Exception {
+//        Set<Class<? extends HotDrinkFactory>> types =  new Reflections("")
+//                .getSubTypesOf(HotDrinkFactory.class);
+//
+//        for(Class<? extends HotDrinkFactory> type: types) {
+//            namedFactories.add(new KeyPair<>(
+//                    type.getSimpleName().replace("Factory", ""),
+//                    type.getDeclaredConstructor().newInstance()
+//            ));
+//        }
+//    }
 
-    public HotDrinkMachine() throws Exception {
-        Set<Class<? extends HotDrinkFactory>> types =  new Reflections("")
-                .getSubTypesOf(HotDrinkFactory.class);
-
-        for(Class<? extends HotDrinkFactory> type: types) {
-            namedFactories.add(new KeyPair<>(
-                    type.getSimpleName().replace("Factory", ""),
-                    type.getDeclaredConstructor().newInstance()
-            ));
-        }
-    }
-
-    public HotDrink makeDrink() throws Exception {
-        System.out.println("Available drinks: ");
-        for (int index = 0; index < namedFactories.size(); ++index) {
-            var item = namedFactories.get(index);
-            System.out.println("" + index + ": " + item.getKey());
-        }
-
-        // ...
-        return null;
-    }
-}
+//    public HotDrink makeDrink() throws Exception {
+//        System.out.println("Available drinks: ");
+//        for (int index = 0; index < namedFactories.size(); ++index) {
+//            var item = namedFactories.get(index);
+//            System.out.println("" + index + ": " + item.getKey());
+//        }
+//
+//        // ...
+//        return null;
+//    }
+//}
 
 public class DemoAbstractFactory {
-    public static void main(String[] args) throws Exception {
-        HotDrinkMachine machine = new HotDrinkMachine();
-        HotDrink drink = machine.makeDrink();
-        drink.consume();
-    }
+//    public static void main(String[] args) throws Exception {
+//        HotDrinkMachine machine = new HotDrinkMachine();
+//        HotDrink drink = machine.makeDrink();
+//        drink.consume();
+//    }
 }

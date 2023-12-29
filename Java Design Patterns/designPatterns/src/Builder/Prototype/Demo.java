@@ -64,7 +64,7 @@ public class Demo {
         Person jane = john.clone();
         jane.names[0] = "Jane";
         jane.address.houseNumber = 124;
-        
+
         System.out.println(john);
         System.out.println(jane);
     }
