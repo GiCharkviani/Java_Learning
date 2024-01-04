@@ -1,4 +1,4 @@
-package Builder.Prototype;
+package Prototype;
 
 /* Prototype */
 // When it's easier to copy an existing object to fully initialize a new one

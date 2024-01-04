@@ -1,4 +1,4 @@
-package Builder.Prototype;
+package Prototype;
 
 /* Prototype */
 // Serialization
