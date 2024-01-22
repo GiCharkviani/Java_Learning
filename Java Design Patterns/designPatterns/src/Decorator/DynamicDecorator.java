@@ -1,5 +1,8 @@
 package Decorator;
+/* Decorator pattern */
 
+
+// Dynamic decorator
 interface Shape {
     String info();
 }
