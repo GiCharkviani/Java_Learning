@@ -2,7 +2,7 @@ package Decorator;
 
 /* Decorator pattern */
 
-// Adapter
+// Decorator also be an Adapter or other thing as well (like Facade)
 
 import java.util.stream.IntStream;
 
