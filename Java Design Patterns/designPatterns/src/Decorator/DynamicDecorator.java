@@ -3,6 +3,7 @@ package Decorator;
 
 
 // Dynamic decorator
+// you can always build decorators at runtime
 interface Shape {
     String info();
 }
