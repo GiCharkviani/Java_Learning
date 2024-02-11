@@ -1,4 +1,4 @@
-package Section1.PrimitiveTypesAndString;
+package Section1.PrimitiveTypes;
 
 public class PrimitiveTypes {
     public static void main(String[] args) {
