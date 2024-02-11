@@ -14,6 +14,9 @@ public class PrimitiveTypes {
         // Byte 8 bits (1 byte)
         byte catAge = 127;
 
+        // Short 16 bits (2 byte)
+        short thoseAges = 32767;
+
         // Integer - 32 bits (4 bytes)
         int myAge = 21;
         int yourAge = 9 / 2;
@@ -28,8 +31,11 @@ public class PrimitiveTypes {
         // Double - 64 bit (8 bytes)
         double milkPrice = 2.2 - 1.1;
 
+        long longNumber = 12_321_231_21;
+        
 
-        System.out.println(appleKgs);
+
+        System.out.println(milkPrice);
     }
 
 
