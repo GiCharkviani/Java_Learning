@@ -8,6 +8,10 @@ public class IfKeywordANdCodeBlocks {
         int bonus = 100;
 
         calculateScore(gameOver, score, levelCompleted, bonus);
+
+        // Method overloading
+        logMyInfo("Giorgi", "Charkvi");
+        logMyInfo("Giorgi", 21);
     }
 
     public static void calculateScore(boolean gameOver, int score, int levelCompleted, int bonus) {
@@ -18,8 +22,14 @@ public class IfKeywordANdCodeBlocks {
         }
     }
 
-    public static void logMyInfo(String name) {
-        System.out.println("My name is " + name);
+
+    // Methods overloading
+    public static void logMyInfo(String name, String surname) {
+        System.out.println("My name is " + name + " and surname is " + surname);
+    }
+
+    public static void logMyInfo(String name, int age) {
+        System.out.println("My name is " + name + " and age is " + age);
     }
 
 
