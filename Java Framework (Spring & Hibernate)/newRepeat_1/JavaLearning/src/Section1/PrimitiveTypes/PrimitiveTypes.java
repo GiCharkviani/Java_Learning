@@ -31,8 +31,9 @@ public class PrimitiveTypes {
         // Double - 64 bit (8 bytes)
         double milkPrice = 2.2 - 1.1;
 
+        // number syntax
         long longNumber = 12_321_231_21;
-        
+
 
 
         System.out.println(milkPrice);
