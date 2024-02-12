@@ -2,7 +2,7 @@ package Section4_OOP.Classes;
 
 public class Main {
     public static void main(String[] args) {
-        Car.logCar();
+        Car.logFactoryInfo();
 
         Car BMW = new Car("M5", "N58");
         BMW.setColor("red");

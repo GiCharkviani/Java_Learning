@@ -9,8 +9,8 @@ public class Car {
 
     public static boolean HAS_TIRES = true;
 
-    public static void logCar() {
-        System.out.println("Car is awesome");
+    public static void logFactoryInfo() {
+        System.out.println("Our Factory is producing all kinds of cars, it's up to your wish");
     }
 
     public Car(String model, String newEngine) {
