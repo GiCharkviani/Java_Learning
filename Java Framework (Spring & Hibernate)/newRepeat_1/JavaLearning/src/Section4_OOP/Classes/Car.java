@@ -40,9 +40,6 @@ public class Car {
             System.out.println("Invalid color");
         }
     }
-
-
-
-
+    
 }
 
