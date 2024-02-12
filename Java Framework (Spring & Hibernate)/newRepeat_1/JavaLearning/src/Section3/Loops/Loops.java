@@ -18,5 +18,12 @@ public class Loops {
             myNumber++;
         }
 
+        System.out.println("**********");
+        int otherNumber = 0;
+
+        do {
+            System.out.println("I run only once");
+        } while (otherNumber > 0);
+
     }
 }
