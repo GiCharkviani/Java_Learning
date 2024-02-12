@@ -18,6 +18,13 @@ public class Car {
         this.model = model;
     }
 
+    public Car(String model, String engine, int doors, int wheels) {
+        this.model = model;
+        this.engine = engine;
+        this.doors = doors;
+        this.wheels = wheels;
+    }
+
     public String getColor() {
         return color;
     }
