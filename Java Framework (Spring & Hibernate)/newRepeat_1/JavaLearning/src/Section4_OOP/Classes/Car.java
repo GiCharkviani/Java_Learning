@@ -1,7 +1,6 @@
 package Section4_OOP.Classes;
 
 public class Car {
-    // POJO - Plain old java objects, Class that have instance fields (No static)
     private int doors;
     private int wheels;
     private String model;
