@@ -17,7 +17,7 @@ public class Car {
     }
 
     public void setColor(String color) {
-        if(color.toLowerCase() == "black") {
+        if(color.equalsIgnoreCase("black")) {
             this.color = color;
         } else {
             System.out.println("Invalid color");
