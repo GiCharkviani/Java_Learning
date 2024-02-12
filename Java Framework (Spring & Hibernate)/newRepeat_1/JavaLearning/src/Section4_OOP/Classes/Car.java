@@ -25,6 +25,10 @@ public class Car {
         this.wheels = wheels;
     }
 
+    public Car(String model) {
+        this(model, "v8",5,4);
+    }
+
     public String getColor() {
         return color;
     }
