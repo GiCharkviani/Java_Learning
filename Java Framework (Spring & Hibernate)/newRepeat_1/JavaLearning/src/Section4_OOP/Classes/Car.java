@@ -7,6 +7,12 @@ public class Car {
     private String engine;
     private String color;
 
+    public static boolean HAS_TIRES = true;
+
+    public static void logCar() {
+        System.out.println("Car is awesome");
+    }
+
     public Car(String model, String newEngine) {
         engine = newEngine;
         this.model = model;
