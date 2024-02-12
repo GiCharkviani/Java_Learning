@@ -2,7 +2,7 @@ package Section3.SwitchStatement;
 
 public class SwitchStatement {
     public static void main(String[] args) {
-        int switchValue = 4;
+        int switchValue = 7;
 
         switch (switchValue) {
             case 1:
