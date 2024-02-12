@@ -5,7 +5,7 @@ public class Car {
     private int wheels;
     private String model;
     private String engine;
-    private String color;
+    public String color;
 
     public Car(String model, String newEngine) {
         engine = newEngine;
