@@ -4,6 +4,11 @@ public class Airplane extends Vehicle {
     private int wings;
     private int turbines;
 
+    public Airplane(String name, int size, String engine, int wheels, int wings) {
+        super(name, size, engine, wheels);
+        this.wings = wings;
+    }
+
     public void fly() {
         System.out.println(this.name + " is flying");
     }
