@@ -17,4 +17,15 @@ public class Airplane extends Vehicle {
         System.out.println(this.name + " is landing");
     }
 
+    @Override
+    public void move() {
+        System.out.println(this.name + " Airplane is flying");
+    }
+
+    @Override
+    public void steering() {
+        super.steering();
+        System.out.println(this.name + " also Airplane is steering");
+    }
+
 }
