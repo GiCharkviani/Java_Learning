@@ -5,11 +5,15 @@ public class Motherboard extends Product {
     private int cardSlot;
     private String bios;
 
+    // Composition
+    private Demensions demensions;
+
     public Motherboard(String model, String manufacturer, int width, int height, int depth, int ramSlot, int cardSlot, String bios) {
-        super(model, manufacturer, width, height, depth);
+        super(model, manufacturer);
         this.ramSlot = ramSlot;
         this.cardSlot = cardSlot;
         this.bios = bios;
+        this.demensions = new Demensions(width, height, depth);
     }
 
     public int getRamSlot() {
@@ -22,5 +26,9 @@ public class Motherboard extends Product {
 
     public String getBios() {
         return bios;
+    }
+
+    public Demensions getDemensions() {
+        return demensions;
     }
 }

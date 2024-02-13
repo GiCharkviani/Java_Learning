@@ -6,8 +6,8 @@ public class DigitalProduct extends Product {
     private String version;
     private Date date;
 
-    public DigitalProduct(String model, String manufacturer, int width, int height, int depth, String version, Date date) {
-        super(model, manufacturer, width, height, depth);
+    public DigitalProduct(String model, String manufacturer, String version, Date date) {
+        super(model, manufacturer);
         this.version = version;
         this.date = date;
     }
