@@ -8,17 +8,17 @@ public class Vehicle {
     protected int size;
 
     public Vehicle(String name) {
-        this.name = name;
+        this(name, 5, "V8", 2);
     }
 
     public Vehicle(String name, int size, String engine) {
-        this(name);
-        this.size = size;
-        this.engine = engine;
+        this(name, size, engine, 2);
     }
 
     public Vehicle(String name, int size, String engine, int wheels) {
-        this(name, size, engine);
+        this.name = name;
+        this.size = size;
+        this.engine = engine;
         this.wheels = wheels;
     }
 
