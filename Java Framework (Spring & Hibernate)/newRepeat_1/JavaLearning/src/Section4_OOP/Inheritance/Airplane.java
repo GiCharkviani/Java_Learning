@@ -17,6 +17,14 @@ public class Airplane extends Vehicle {
         System.out.println(this.name + " is landing");
     }
 
+    public int getTurbines() {
+        return turbines;
+    }
+
+    public void setTurbines(int turbines) {
+        this.turbines = turbines;
+    }
+
     @Override
     public void move() {
         System.out.println(this.name + " Airplane is flying");
