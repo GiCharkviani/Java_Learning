@@ -14,7 +14,7 @@ public class Product {
         this.height = height;
         this.depth = depth;
     }
-    
+
     public void logProductModel() {
         System.out.println("The product model is " + this.model);
     }
