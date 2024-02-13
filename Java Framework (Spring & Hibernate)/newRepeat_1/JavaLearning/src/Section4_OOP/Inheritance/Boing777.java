@@ -14,4 +14,16 @@ public class Boing777 extends Airplane {
     public void setModel(String model) {
         this.model = model;
     }
+
+    @Override
+    public String toString() {
+        return "Boing777{" +
+                "model='" + model + '\'' +
+                ", name='" + name + '\'' +
+                ", engine='" + engine + '\'' +
+                ", wheels=" + wheels +
+                ", size=" + size +
+                '}';
+    }
+    
 }
