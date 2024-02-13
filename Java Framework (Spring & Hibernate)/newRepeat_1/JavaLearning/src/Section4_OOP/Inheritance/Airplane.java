@@ -8,4 +8,8 @@ public class Airplane extends Vehicle {
         System.out.println(this.name + " is flying");
     }
 
+    public void landing() {
+        System.out.println(this.name + " is landing");
+    }
+
 }

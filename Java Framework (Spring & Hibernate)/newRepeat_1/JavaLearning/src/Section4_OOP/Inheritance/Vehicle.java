@@ -1,11 +1,11 @@
 package Section4_OOP.Inheritance;
 
 public class Vehicle {
-    private String name;
-    private String engine;
+    protected String name;
+    protected String engine;
 
-    private int wheels;
-    private int size;
+    protected int wheels;
+    protected int size;
 
     public Vehicle(String name) {
         this.name = name;
