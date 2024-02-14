@@ -53,6 +53,22 @@ class LordOfRings extends Movie {
 
 public class Main {
     public static void main(String[] args) {
+        Movie randomMovie = randomMovie();
 
+        randomMovie.plot();
+    }
+
+    public static Movie randomMovie() {
+        int randomNumber = (int)(Math.random() * 3) + 1;
+        switch (randomNumber) {
+            case 1:
+                return new NoCountryForOldMen("No Country For Old Men");
+            case 2:
+                return new PuplFunction("Purp Function");
+            case 3:
+                return new LordOfRings("Lord Of Rings");
+        }
+
+        return null;
     }
 }
