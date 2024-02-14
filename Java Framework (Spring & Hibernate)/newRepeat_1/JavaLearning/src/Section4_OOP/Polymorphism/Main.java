@@ -22,7 +22,32 @@ class NoCountryForOldMen extends Movie {
         super(name);
     }
 
-    
+    @Override
+    public void plot() {
+        System.out.println("More blood");
+    }
+}
+
+class PuplFunction extends Movie {
+    public PuplFunction(String name) {
+        super(name);
+    }
+
+    @Override
+    public void plot() {
+        System.out.println("A lot of heroine");
+    }
+}
+
+class LordOfRings extends Movie {
+    public LordOfRings(String name) {
+        super(name);
+    }
+
+    @Override
+    public void plot() {
+        System.out.println("Ring");
+    }
 }
 
 
