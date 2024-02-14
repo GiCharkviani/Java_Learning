@@ -55,6 +55,9 @@ public class Main {
     public static void main(String[] args) {
         Movie randomMovie = randomMovie();
 
+        // Compiler gives type automatically
+        var myName = "Giorgi";
+
         randomMovie.plot();
     }
 
