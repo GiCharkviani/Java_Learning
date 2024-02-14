@@ -58,6 +58,13 @@ public class Main {
         // Compiler gives type automatically
         var myName = "Giorgi";
 
+        LordOfRings lord = new LordOfRings("Lord of rings");
+
+        // instancof checks if the provided object is instance of particular class
+        if(lord instanceof LordOfRings) {
+            System.out.println("Correct instance");
+        }
+
         randomMovie.plot();
     }
 
