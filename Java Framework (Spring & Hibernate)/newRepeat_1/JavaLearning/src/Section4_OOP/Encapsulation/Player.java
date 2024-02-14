@@ -5,6 +5,22 @@ public class Player {
     public int health;
     public String weapon;
 
+    public String getFullName() {
+        return fullName;
+    }
+
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
+    }
+
+    public String getWeapon() {
+        return weapon;
+    }
+
+    public void setWeapon(String weapon) {
+        this.weapon = weapon;
+    }
+
     public void loseHealth(int damage) {
         this.health -= damage;
         if(this.health <= 0) {
