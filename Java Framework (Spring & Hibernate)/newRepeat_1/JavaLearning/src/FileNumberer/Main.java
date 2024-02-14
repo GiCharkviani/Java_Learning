@@ -6,10 +6,10 @@ import java.util.Comparator;
 
 public class Main {
     public static void main(String[] args) {
-        String directory = "/Users/giorgi.charkviani/Desktop/Learning/Java/Java_Learning/Java Language/TutorWay/section11";
+        String directory = "/Users/giorgi.charkviani/Desktop/Learning/Java/Java_Learning/Java Language/TutorWay/section9";
         File dir = new File(directory);
         File[] files = dir.listFiles((d, name) -> name.endsWith(".pptx"));
-        File[] directories = dir.listFiles((d, name) -> !name.endsWith(".pptx"));
+//        File[] directories = dir.listFiles((d, name) -> !name.endsWith(".pptx"));
 
         if (files != null && files.length > 0) {
             renameFiles(files);
