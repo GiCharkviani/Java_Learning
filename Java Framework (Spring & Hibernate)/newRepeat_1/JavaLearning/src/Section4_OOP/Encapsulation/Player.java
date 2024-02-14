@@ -1,15 +1,11 @@
 package Section4_OOP.Encapsulation;
 
 public class Player {
-    public String fullName;
-    public int health;
-    public String weapon;
+    private String fullName;
+    private int health = 100;
+    private String weapon;
 
-    public String getFullName() {
-        return fullName;
-    }
-
-    public void setFullName(String fullName) {
+    public Player(String fullName) {
         this.fullName = fullName;
     }
 
@@ -22,10 +18,12 @@ public class Player {
     }
 
     public void loseHealth(int damage) {
-        this.health -= damage;
-        if(this.health <= 0) {
+        if(this.health - damage <= 0) {
             System.out.println("Player is dead");
+        } else {
+            this.health -= damage;
         }
+
     }
 
 
