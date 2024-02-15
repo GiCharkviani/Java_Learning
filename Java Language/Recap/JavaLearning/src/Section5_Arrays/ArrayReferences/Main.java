@@ -10,6 +10,10 @@ public class Main {
 
         System.out.println(myNumbers[0]);
 
+        myNames("Giorgi", "Avto", "Gela", "Vazha");
+
+        int[][] years = {{2, 3, 4}, {1,2,4,5}, {1,2,3,5,2}}; // Multidimensional array
+
     }
 
     public static void logIntegersArray(int[] integers) {
