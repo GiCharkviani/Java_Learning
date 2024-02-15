@@ -34,6 +34,7 @@ public class Main {
         String[] names = {"Gela", "Vazha", "Bacho", "Dato", "Mari", "Nino"};
         Arrays.sort(names);
         logArray(names);
+        System.out.println(Arrays.binarySearch(names, "Nino"));
     }
 
     public static void logArray(String[] integers) {
