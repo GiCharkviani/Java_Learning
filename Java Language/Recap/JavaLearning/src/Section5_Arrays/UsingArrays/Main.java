@@ -33,13 +33,17 @@ public class Main {
 
         String[] names = {"Gela", "Vazha", "Bacho", "Dato", "Mari", "Nino"};
         Arrays.sort(names);
-        logArray(names);
+        logStringsArray(names);
         System.out.println(Arrays.binarySearch(names, "Nino"));
     }
 
-    public static void logArray(String[] integers) {
+    public static void logIntegersArray(int[] integers) {
         for (int i = 0; i < integers.length; i++) {
             System.out.println(integers[i]);
         }
+    }
+
+    public static void logStringsArray(String[] strings) {
+
     }
 }
