@@ -28,6 +28,8 @@ public class Main {
         Arrays.sort(ages);
         System.out.println("*******");
         logArray(ages);
+        System.out.println("*******");
+        System.out.println(Arrays.toString(ages));
     }
 
     public static void logArray(int[] integers) {
