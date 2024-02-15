@@ -2,7 +2,7 @@ package Section4_OOP.Classes;
 
 public class Main {
     public static void main(String[] args) {
-        Car.logFactoryInfo();
+//        Car.logFactoryInfo();
 
         // Record
         PojoCar myPojoCar = new PojoCar("MERCEDES", "Merci");
@@ -14,7 +14,25 @@ public class Main {
         Car toyota = new Car("4Runner");
 
 
-        BMW.setColor("red");
-        System.out.println(BMW.getColor());
+//        BMW.setColor("red");
+//        System.out.println(BMW.getColor());
+
+
+        String myName = "Giorgi";
+        String friendName = "Avto";
+
+        if (myName.equals(friendName))
+            System.out.println("They equal");
+        else
+            System.out.println("They don't equal");
+
+
+        System.out.println(myName.length());
+        System.out.println(myName.endsWith("i"));
+        System.out.println(myName.charAt(0));
+
+        StringBuilder myCar = new StringBuilder("Toyota");
+        
+
     }
 }
