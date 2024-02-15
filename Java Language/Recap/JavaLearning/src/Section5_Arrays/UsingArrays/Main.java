@@ -1,5 +1,7 @@
 package Section5_Arrays.UsingArrays;
 
+import java.util.Arrays;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -20,5 +22,15 @@ public class Main {
         System.out.println(ages[0]);
         System.out.println(years[0]);
 
+        System.out.println("*******");
+
+        Arrays.sort(myNumbers);
+
+    }
+
+    public static void logArray(int[] integers) {
+        for (int i = 0; i < integers.length; i++) {
+            System.out.println(integers[i]);
+        }
     }
 }
