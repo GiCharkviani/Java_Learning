@@ -44,6 +44,8 @@ public class Main {
     }
 
     public static void logStringsArray(String[] strings) {
-
+        for(String string: strings) {
+            System.out.println(string);
+        }
     }
 }
