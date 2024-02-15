@@ -32,7 +32,8 @@ public class Main {
         System.out.println(myName.charAt(0));
 
         StringBuilder myCar = new StringBuilder("Toyota");
-        
+        myCar.append(" cool");
+        System.out.println(myCar);
 
     }
 }
