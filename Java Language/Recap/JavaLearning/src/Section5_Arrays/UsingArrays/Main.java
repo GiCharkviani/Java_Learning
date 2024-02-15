@@ -24,15 +24,19 @@ public class Main {
 //
 //        System.out.println("*******");
 
-        logArray(ages);
+//        logArray(ages);
         Arrays.sort(ages);
-        System.out.println("*******");
-        logArray(ages);
-        System.out.println("*******");
-        System.out.println(Arrays.toString(ages));
+//        System.out.println("*******");
+//        logArray(ages);
+//        System.out.println("*******");
+//        System.out.println(Arrays.toString(ages));
+
+        String[] names = {"Gela", "Vazha", "Bacho", "Dato", "Mari", "Nino"};
+        Arrays.sort(names);
+        logArray(names);
     }
 
-    public static void logArray(int[] integers) {
+    public static void logArray(String[] integers) {
         for (int i = 0; i < integers.length; i++) {
             System.out.println(integers[i]);
         }
