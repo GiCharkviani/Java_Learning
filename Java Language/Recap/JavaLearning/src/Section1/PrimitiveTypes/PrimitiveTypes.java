@@ -15,7 +15,7 @@ public class PrimitiveTypes {
         byte catAge = 127;
 
         // Short 16 bits (2 byte)
-        short thoseAges = 32767;
+        short thoseAges = 129;
 
         // Integer - 32 bits (4 bytes)
         int myAge = 21;
@@ -34,9 +34,8 @@ public class PrimitiveTypes {
         // number syntax
         long longNumber = 12_321_231_21;
 
-
-
-        System.out.println(milkPrice);
+        byte myByte = (byte)(thoseAges - 2);
+        System.out.println(myByte);
     }
 
 
