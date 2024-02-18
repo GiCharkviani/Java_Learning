@@ -14,13 +14,10 @@ public class Main {
 
     public static void reverse(int[] array) {
         int base = 0;
-        for (int i = array.length - 1; ; i--) {
-            if(i <= base)
-                break;
+        for (int i = array.length - 1; i >= base; base++, i--) {
             int temp = array[base];
             array[base] = array[i];
             array[i] = temp;
-            base++;
         }
     }
 
