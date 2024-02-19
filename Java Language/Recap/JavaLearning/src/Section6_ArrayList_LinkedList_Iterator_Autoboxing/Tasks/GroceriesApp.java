@@ -6,6 +6,21 @@ public class GroceriesApp {
     public static void main(String[] args) {
         ArrayList<String> groceries = new ArrayList<>();
 
+        addItem("Tomato", groceries);
+        addItem("Potato", groceries);
+        addItem("Cucumber", groceries);
+        addItem("Bread", groceries);
+        addItem("Souse", groceries);
+        addItem("Pasta", groceries);
+        addItem("Pepsi", groceries);
+        showItems(groceries);
+
+        System.out.println("*****");
+
+        deleteItem("Tomato", groceries);
+        showItems(groceries);
+
+        System.out.println("*****");
 
     }
 
