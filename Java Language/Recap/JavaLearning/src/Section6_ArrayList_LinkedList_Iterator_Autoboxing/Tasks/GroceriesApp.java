@@ -16,4 +16,26 @@ public class GroceriesApp {
             System.out.println("The item " + item + " is already in the list");
         }
     }
+
+    public static void deleteItem(String item, ArrayList<String> list) {
+        if(list.contains(item)) {
+            list.remove(item);
+        } else {
+            System.out.println("The item " + item + " is not in the list");
+        }
+    }
+
+    public static void showItems(ArrayList<String> list) {
+        for(String item: list) {
+            System.out.println(item);
+        }
+    }
+
+    public static void updateItem(String item, int index, ArrayList<String> list) {
+        if(list.contains(item)) {
+            list.set(index, item);
+        } else {
+            System.out.println("The item " + item + " is not included in the list");
+        }
+    }
 }
