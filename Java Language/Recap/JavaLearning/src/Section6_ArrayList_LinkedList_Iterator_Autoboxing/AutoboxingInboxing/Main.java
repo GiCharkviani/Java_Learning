@@ -7,8 +7,8 @@ public class Main {
         Double amount = Double.valueOf(33.2); // boxing
         Integer number = Integer.valueOf(22);
 
-        int myNewAge = myAge.intValue(); // unboxing
-
+        int myNewAge = myAge.intValue(); // manually unboxing
+        int numberNumber = myAge; // automatic unboxing
 
         System.out.println(myAge);
     }
