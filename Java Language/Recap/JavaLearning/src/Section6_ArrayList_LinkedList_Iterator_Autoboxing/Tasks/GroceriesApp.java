@@ -22,10 +22,14 @@ public class GroceriesApp {
 
         System.out.println("*****");
 
+        updateItem("Kitri", 1, groceries);
+        showItems(groceries);
+
+
     }
 
     public static void addItem(String item, ArrayList<String> list) {
-        if(!list.contains(item)) {
+        if (!list.contains(item)) {
             list.add(item);
         } else {
             System.out.println("The item " + item + " is already in the list");
@@ -33,7 +37,7 @@ public class GroceriesApp {
     }
 
     public static void deleteItem(String item, ArrayList<String> list) {
-        if(list.contains(item)) {
+        if (list.contains(item)) {
             list.remove(item);
         } else {
             System.out.println("The item " + item + " is not in the list");
@@ -41,16 +45,12 @@ public class GroceriesApp {
     }
 
     public static void showItems(ArrayList<String> list) {
-        for(String item: list) {
+        for (String item : list) {
             System.out.println(item);
         }
     }
 
-    public static void updateItem(String item, int index, ArrayList<String> list) {
-        if(list.contains(item)) {
-            list.set(index, item);
-        } else {
-            System.out.println("The item " + item + " is not included in the list");
-        }
+    public static void updateItem(String newItem, int index, ArrayList<String> list) {
+        list.set(index, newItem);
     }
 }
