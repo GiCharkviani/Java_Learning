@@ -18,10 +18,14 @@ public class Main {
 //        }
 
         var iterator = grocerieas.listIterator();
-        for (int i = 0; i < grocerieas.size(); i++) {
-            if(iterator.hasNext()) {
-                System.out.println(iterator.next());
-            }
+//        for (int i = 0; i < grocerieas.size(); i++) {
+//            if(iterator.hasNext()) {
+//                System.out.println(iterator.next());
+//            }
+//        }
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next());
         }
+
     }
 }
