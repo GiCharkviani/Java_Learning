@@ -25,7 +25,10 @@ public class GroceriesApp {
         updateItem("Kitri", 1, groceries);
         showItems(groceries);
 
-
+        System.out.println("*** Errors **");
+        // Errors
+        addItem("Pasta", groceries);
+        deleteItem("Wine", groceries);
     }
 
     public static void addItem(String item, ArrayList<String> list) {
