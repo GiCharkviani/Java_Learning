@@ -10,7 +10,7 @@ public class Main {
 //       reverse(numbers);
         sortDesc(numbers);
         System.out.println("*****");
-       log(numbers);
+//       log(numbers);
     }
 
     public static void reverse(int[] array) {
