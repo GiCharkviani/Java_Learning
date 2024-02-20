@@ -37,6 +37,8 @@ public class Bird extends Animal implements FlightEnabled, Trackable {
         System.out.println("Magrad skintlavs");
     }
 
+
+
     @Override
     public void track() {
         System.out.println("Bird is tracking");

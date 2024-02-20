@@ -10,9 +10,14 @@ public interface FlightEnabled {
 
     default void skintalvs() {
         System.out.println("Ra davaskintle");
+        this.igineba();
     }
 
     static void ilandzgeba() {
         System.out.println("She arachito");
+    }
+
+    private void igineba() {
+        System.out.println("Sheni ******");
     }
 }
