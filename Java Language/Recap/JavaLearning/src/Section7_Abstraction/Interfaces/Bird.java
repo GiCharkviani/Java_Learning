@@ -8,11 +8,16 @@ public class Bird extends Animal implements FlightEnabled {
 
     @Override
     public void move(String speed) {
-        
+        System.out.println("TklapTLAP");
     }
 
     @Override
     public void makeNoise() {
+        System.out.println("ChikChik");
+    }
 
+    @Override
+    public void fly() {
+        System.out.println("I believe I can fly");
     }
 }
