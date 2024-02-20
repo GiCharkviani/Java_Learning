@@ -1,8 +1,12 @@
 package Section6_ArrayList_LinkedList_Iterator_Autoboxing.Enums;
 
+import java.util.Random;
+
 public class Main {
     public static void main(String[] args) {
 
+        DaysOfWeek randomDay = getRandomName();
+        weekDay(randomDay);
     }
 
     public static void weekDay(DaysOfWeek weekDay) {
@@ -29,5 +33,12 @@ public class Main {
                 System.out.println("Today is a Saturday");
                 break;
         }
+    }
+
+    public static DaysOfWeek getRandomName() {
+        int randomInteger = new Random().nextInt(6);
+        DaysOfWeek[] allDays = DaysOfWeek.values();
+
+        return allDays[randomInteger];
     }
 }
