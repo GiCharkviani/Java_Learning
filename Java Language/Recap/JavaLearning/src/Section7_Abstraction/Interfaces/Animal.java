@@ -2,8 +2,8 @@ package Section7_Abstraction.Interfaces;
 
 public abstract class Animal {
     protected final String name;
-    private int size;
-    double weight;
+    private final int size;
+    private final double weight;
 
     public Animal(String name, int size, double weight) {
         this.name = name;
