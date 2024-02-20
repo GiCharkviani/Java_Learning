@@ -2,7 +2,7 @@ package Section7_Abstraction.Interfaces;
 
 public class Bird extends Animal implements FlightEnabled {
 
-    public Bird(String name, String size, double weight) {
+    public Bird(String name, int size, double weight) {
         super(name, size, weight);
     }
 
