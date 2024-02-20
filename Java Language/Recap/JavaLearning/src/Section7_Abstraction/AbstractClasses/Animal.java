@@ -1,7 +1,7 @@
 package Section7_Abstraction.AbstractClasses;
 
 abstract class Xerxemliani {
-    
+
 }
 
 
