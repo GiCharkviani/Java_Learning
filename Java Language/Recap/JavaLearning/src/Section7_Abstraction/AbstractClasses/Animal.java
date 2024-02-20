@@ -1,9 +1,9 @@
 package Section7_Abstraction.AbstractClasses;
 
 public abstract class Animal {
-    protected String name;
+    protected final String name;
     private String size;
-    private double weight;
+    double weight;
 
     public Animal(String name, String size, double weight) {
         this.name = name;
@@ -14,7 +14,7 @@ public abstract class Animal {
     public abstract void move(String speed);
     public abstract void makeNoise();
 
-    protected void breathes() {
+    protected final void breathes() {
         System.out.println("Animal " + this.name + " is breathing");
     }
 
