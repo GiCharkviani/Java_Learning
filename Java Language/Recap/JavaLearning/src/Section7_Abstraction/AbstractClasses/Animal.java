@@ -1,6 +1,11 @@
 package Section7_Abstraction.AbstractClasses;
 
-public abstract class Animal {
+abstract class Xerxemliani {
+    
+}
+
+
+public abstract class Animal extends Xerxemliani {
     protected final String name;
     private String size;
     double weight;
