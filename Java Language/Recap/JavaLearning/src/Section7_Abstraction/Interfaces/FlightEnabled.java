@@ -7,4 +7,8 @@ public interface FlightEnabled {
     void fly();
     void takeOff();
     void land();
+
+    default void skintalvs() {
+        System.out.println("Ra davaskintle");
+    }
 }
