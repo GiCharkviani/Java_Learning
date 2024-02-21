@@ -21,6 +21,11 @@ public class GamePlayer<T extends Player, E extends String> {
         gamePlayersTeam.add(teamMember);
     }
 
+    public void createTeamMember(Class<T> teamMember) {
+        var newMember = teamMember.getDeclaredMethods();
+        System.out.println(newMember[0]);
+    }
+
     public E getName(int playerNumber) {
         return (E)gamePlayersTeam.get(playerNumber).getFirstName();
     }
