@@ -3,7 +3,7 @@ package Section8_Generics;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GamePlayer<T extends Player> {
+public class GamePlayer<T extends Player, E extends String> {
 
     private String name;
     private List<T> gamePlayersTeam = new ArrayList<>();
@@ -19,6 +19,10 @@ public class GamePlayer<T extends Player> {
 
     public void addTeamMember(T teamMember) {
         gamePlayersTeam.add(teamMember);
+    }
+
+    public E getName(int playerNumber) {
+        return (E)gamePlayersTeam.get(playerNumber).getFirstName();
     }
 
 
