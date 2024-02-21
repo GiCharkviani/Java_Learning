@@ -23,5 +23,12 @@ public class Main {
         ballTeam.addTeamMember(new BasketballPlayer("viktor","boisa" ,3));
 BasketballPlayer michel =   ballTeam.getTeamMember(1);
         System.out.println(michel.getFirstName());
+
+
+
+        GamePlayer<WitcherPlayers>   witcherTeam = new GamePlayer<>("sosio");
+        witcherTeam.addTeamMember(new WitcherPlayers("soso" , "gochi",12));
+        WitcherPlayers  so = witcherTeam.getTeamMember(0);
+        System.out.println(so.getFirstName());
     }
 }
