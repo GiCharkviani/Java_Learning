@@ -1,4 +1,4 @@
-package Section2.ifKeywordANdCodeBlocks;
+package Section2_Expressions_Statements_and_more.ifKeywordANdCodeBlocks;
 
 public class IfKeywordANdCodeBlocks {
     public static void main(String[] args) {

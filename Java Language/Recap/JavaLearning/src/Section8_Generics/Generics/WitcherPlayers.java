@@ -1,4 +1,4 @@
-package Section8_Generics;
+package Section8_Generics.Generics;
 
 public class WitcherPlayers extends Player {
     public WitcherPlayers(String firstName, String lastname, int age) {

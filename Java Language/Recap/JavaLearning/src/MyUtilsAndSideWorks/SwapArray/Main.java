@@ -1,4 +1,4 @@
-package SwapArray;
+package MyUtilsAndSideWorks.SwapArray;
 
 import java.util.Arrays;
 

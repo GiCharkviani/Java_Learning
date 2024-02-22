@@ -1,4 +1,4 @@
-package Section3.SwitchStatement;
+package Section3_ControlFlow.SwitchStatement;
 
 public class SwitchStatement {
     public static void main(String[] args) {

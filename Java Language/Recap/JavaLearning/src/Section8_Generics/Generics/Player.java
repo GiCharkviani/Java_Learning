@@ -1,4 +1,4 @@
-package Section8_Generics;
+package Section8_Generics.Generics;
 
 public abstract class Player {
     private String firstName;

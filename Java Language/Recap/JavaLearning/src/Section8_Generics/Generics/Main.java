@@ -1,4 +1,4 @@
-package Section8_Generics;
+package Section8_Generics.Generics;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
