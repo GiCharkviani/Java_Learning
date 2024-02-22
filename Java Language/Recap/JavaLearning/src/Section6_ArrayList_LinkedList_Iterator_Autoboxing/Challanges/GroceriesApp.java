@@ -1,4 +1,4 @@
-package Section6_ArrayList_LinkedList_Iterator_Autoboxing.Tasks;
+package Section6_ArrayList_LinkedList_Iterator_Autoboxing.Challanges;
 
 import java.util.ArrayList;
 
